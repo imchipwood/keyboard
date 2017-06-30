@@ -1,6 +1,6 @@
 [submodule "BoardBuilder"]
 	path = BoardBuilder
-	url = https://github.com/CurrentResident/BoardBuilder
+url=https://github.com/DevinPentecost/BoardBuilder.git
 [submodule "laserdrw-exporter-for-inkscape"]
 	path = laserdrw-exporter-for-inkscape
 	url = https://github.com/daniel-thompson/laserdrw-exporter-for-inkscape
