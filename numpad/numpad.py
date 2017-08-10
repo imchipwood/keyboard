@@ -34,16 +34,23 @@ layout_name = "numpad-layout.json"
 #Set up the parameters
 layout_path = os.path.join(file_directory, layout_name)
 stabilizers = "costar"
-horizontal_padding = '15'
-vertical_padding = '45,15'
-corner_radius = 10
-screw_count = 4
-screw_diameter = 3
-output_dir = '.'
+horizontal_padding = '12'
+vertical_padding = '35,12'
+corner_radius = 6
+screw_count = 6
+screw_diameter = 5
+screw_padding = 6
+screw_side_count = 6
+output_dir = './out/'
 
 #Build the board
-board = BoardBuilder(layout_path, horizontal_padding, vertical_padding, corner_radius, screw_count, screw_diameter, False, stabilizers)
+board = BoardBuilder(layout_path, horizontal_padding, vertical_padding, corner_radius, screw_count, screw_diameter, False, stabilizers, screw_padding, screw_side_count)
+board.render_mid_layers(output_dir)
+
+#The top and bottom have different holes for the screws
+screw_diameter_face_bottom = 3
+screw_side_count_face_bottom = -1
+board = BoardBuilder(layout_path, horizontal_padding, vertical_padding, corner_radius, screw_count, screw_diameter_face_bottom, False, stabilizers, screw_padding, screw_side_count_face_bottom)
 board.render_top_plate(output_dir)
 board.render_bottom_plate(output_dir)
-board.render_mid_layers(output_dir)
 

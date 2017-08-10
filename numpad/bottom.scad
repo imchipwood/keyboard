@@ -2,7 +2,7 @@
 
 difference() {
 	difference() {
-		square(size = [106.2000000000, 155.2500000000]);
+		square(size = [100.2000000000, 142.2500000000]);
 		union() {
 			difference() {
 				square(center = true, size = 20);
@@ -10,7 +10,7 @@ difference() {
 					circle(r = 10, $fn = 80);
 				}
 			}
-			translate(v = [106.2000000000, 0, 0]) {
+			translate(v = [100.2000000000, 0, 0]) {
 				mirror(v = [1, 0, 0]) {
 					difference() {
 						square(center = true, size = 20);
@@ -20,7 +20,7 @@ difference() {
 					}
 				}
 			}
-			translate(v = [106.2000000000, 155.2500000000, 0]) {
+			translate(v = [100.2000000000, 142.2500000000, 0]) {
 				mirror(v = [1, 1, 0]) {
 					difference() {
 						square(center = true, size = 20);
@@ -30,7 +30,7 @@ difference() {
 					}
 				}
 			}
-			translate(v = [0, 155.2500000000, 0]) {
+			translate(v = [0, 142.2500000000, 0]) {
 				mirror(v = [0, 1, 0]) {
 					difference() {
 						square(center = true, size = 20);
@@ -43,17 +43,17 @@ difference() {
 		}
 	}
 	union() {
-		translate(v = [7, 7, 0]) {
-			circle(r = 1, $fn = 20);
+		translate(v = [6, 6, 0]) {
+			circle(r = 2, $fn = 20);
 		}
-		translate(v = [99.2000000000, 7, 0]) {
-			circle(r = 1, $fn = 20);
+		translate(v = [94.2000000000, 6, 0]) {
+			circle(r = 2, $fn = 20);
 		}
-		translate(v = [7, 148.2500000000, 0]) {
-			circle(r = 1, $fn = 20);
+		translate(v = [6, 136.2500000000, 0]) {
+			circle(r = 2, $fn = 20);
 		}
-		translate(v = [99.2000000000, 148.2500000000, 0]) {
-			circle(r = 1, $fn = 20);
+		translate(v = [94.2000000000, 136.2500000000, 0]) {
+			circle(r = 2, $fn = 20);
 		}
 	}
 }
