@@ -1,20 +1,22 @@
 #Set up some parameters
 #Most are in mm
 import os
-from BoardBuilder.BoardBuilder import BoardBuilder
+from BoardBuilder import BoardBuilder
 
 #Get the current directory and files
 file_directory = os.path.dirname(os.path.realpath(__file__))
-layout_name = "numpad-layout.json"
+layout_name = "numpad-layout_fn.json"
 layout_path = os.path.join(file_directory, layout_name)
-output_dir = './out/'
+output_dir = './out_cpw/'
+if not os.path.exists(output_dir):
+	os.makedirs(output_dir)
 
 #Set up the parameters
 stabilizers = "costar"
-horizontal_padding = '12'
-vertical_padding = '35,12'
+horizontal_padding = '8'
+vertical_padding = '8,8'
 corner_radius = 6
-screw_count = 6
+screw_count = 0
 screw_diameter = 5
 screw_padding = 6
 screw_side_count = 6
